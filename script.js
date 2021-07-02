@@ -2,22 +2,24 @@
 
 let money = prompt('Ваш бюджет на месяц?', '');
 let time = prompt('Введите дату в формате YYYY-MM-DD', '');
-let compulsoryExpense = prompt('Введите обязательную статью расходов в этом месяце', '');
-let $ = prompt('Во сколько обойдется?', '');
-
 
 let appData = {
     budget: money,
     timeData: time,
-    expenses: {
-        compulsoryExpense: $
-    },
+    expenses: {},
     optionalExpenses: {},
     income: [],
     savings: false,
 };
-let s = (money / 30);
-alert(s);
 
-console.log(s);
+let a1 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+    $1 = prompt('Во сколько обойдется?', ''),
+    a2 = prompt('Введите обязательную статью расходов в этом месяце', ''),
+    $2 = prompt('Во сколько обойдется?', '');
+
+appData.expenses.a1 = $1;
+appData.expenses.a2 = $2;
+
+alert(appData.budget / 30);
+
 
