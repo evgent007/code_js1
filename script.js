@@ -1,6 +1,6 @@
 'use strict';
 
-let money = + prompt('Ваш бюджет на месяц?', '');
+let money = +prompt('Ваш бюджет на месяц?', '');
 let time = prompt('Введите дату в формате YYYY-MM-DD', '');
 
 let appData = {
@@ -28,6 +28,7 @@ for (let i = 0; i < 2; i++){
 };
 
 appData.moneyDay = appData.budget / 30;
+console.log(appData.moneyDay);
 
 alert("Бюджет на 1 день составляет " + appData.moneyDay + "руб.");
 
